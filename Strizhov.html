@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Александр Стрижов — QA Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="assets/avatar.jpg" alt="Александр Стрижов" class="avatar">
+    <h1>Александр Стрижов</h1>
+    <p class="subtitle">QA Engineer | Санкт-Петербург</p>
+  </header>
+
+  <main class="container">
+
+    <section class="about">
+      <h2>Обо мне</h2>
+      <p>Тестировщик ПО с опытом ручного тестирования, составления тест-кейсов и глубокой проверки REST API. Уделяю особое внимание деталям, стабильности и соответствию бизнес-требованиям. Не допускаю «багов в прод» — даже если кажется, что «и так сойдёт».</p>
+    </section>
+
+    <section class="skills">
+      <h2>Ключевые навыки</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Тестирование</h3>
+          <ul>
+            <li>Ручное тестирование (web, desktop)</li>
+            <li>Составление тест-кейсов и чек-листов</li>
+            <li>Регрессионное, smoke, sanity-тестирование</li>
+            <li>Тестирование UI/UX по макетам (Figma)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>API & Инструменты</h3>
+          <ul>
+            <li>Тестирование REST API (Postman, Swagger)</li>
+            <li>Работа с DevTools, cURL, HTTP-клиентами</li>
+            <li>Анализ логов: Kibana, Sentry, Grafana, Jaeger</li>
+            <li>Выполнение SQL-запросов</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Процессы</h3>
+          <ul>
+            <li>Взаимодействие с аналитиками и разработчиками</li>
+            <li>Ведение документации (Confluence, Miro)</li>
+            <li>Работа в Jira, TestRail</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <div class="contacts-list">
+        <a href="mailto:example@example.com" class="contact-item">
+          <span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="www.w3.org">
+  <path d="M1.5 5.5V18.5C1.5 19.6046 2.39543 20.5 3.5 20.5H6V8L12 12.5L18 8V20.5H20.5C21.6046 20.5 22.5 19.6046 22.5 18.5V5.5L12 13.5L1.5 5.5Z" fill="#EA4335"/>
+  <path d="M22.5 5.5V18.5C22.5 19.6046 21.6046 20.5 20.5 20.5H18V8L22.5 5.5Z" fill="#FBBC04"/>
+  <path d="M1.5 5.5V18.5C1.5 19.6046 2.39543 20.5 3.5 20.5H6V8L1.5 5.5Z" fill="#4285F4"/>
+  <path d="M18 8L12 12.5L6 8V20.5H18V8Z" fill="#34A853"/>
+</svg></span>
+          <span>darkneuro86@gmail.com</span>
+        </a>
+        <a href="https://t.me/Strizhov_Alexandr" target="_blank" class="contact-item">
+          <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="www.w3.org">
+  <defs>
+    <linearGradient id="tgGrad" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2AABEE"/>
+      <stop offset="1" stop-color="#229ED9"/>
+    </linearGradient>
+  </defs>
+  <circle cx="16" cy="16" r="16" fill="url(#tgGrad)"/>
+  <path d="M23.5 10.5L8.5 16.25L12.25 17.5L13.75 22.25L15.75 18.75L20.25 22L23.5 10.5Z" fill="white"/>
+</svg></span>
+          <span>@Strizhov_Alexandr</span>
+        </a>
+        <a href="https://vk.com/a.strizhov" target="_blank" class="contact-item">
+          <span class="icon"> <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="www.w3.org">
+  <rect width="32" height="32" rx="16" fill="#0077FF"/>
+  <path d="M17.61 21.5c-5.63 0-8.83-3.85-8.96-10.25h2.8c.1 4.7 2.16 6.68 3.8 7.1V11.25h2.64v4.05c1.61-.17 3.31-2.02 3.88-4.05h2.64c-.5 2.45-2.3 4.3-3.56 5.03 1.26.58 2.92 2.22 3.69 4.3h-2.88c-.6-1.87-2.1-3.31-3.69-3.47v3.47h-1.36z" fill="white"/>
+</svg> </span>
+          <span>a.strizhov</span>
+        </a>
+        <!-- Добавьте LinkedIn, VK и др., если нужно -->
+      </div>
+    </section>
+
+    <!-- Кнопка "Кредо" -->
+    <section class="credo-section">
+      <button id="credoBtn" class="credo-btn">✨ Моё кредо</button>
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="credoModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Моё кредо как QA-инженера</h2>
+        <p><strong>«Тестировать — не ломать, а защищать»</strong> — моя цель не найти как можно больше багов, а помочь выпустить продукт, в который можно верить.</p>
+        
+      
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© <span id="year">2025</span> Александр Стрижов</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('credoModal');
+      const btn = document.getElementById('credoBtn');
+      const span = document.getElementById('closeModal');
+
+      if (modal && btn && span) {
+        btn.onclick = () => modal.style.display = 'block';
+        span.onclick = () => modal.style.display = 'none';
+        window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+          }
+        });
+      }
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+</html>
